@@ -12,17 +12,17 @@ public class TestVine extends JunitRunner{
     @Test
     public void requiredElementsShowed() {
         WelcomePage welcomePage = new WelcomePage();
-        WebElement checkbox = DriverProvider.getDriver().findElement(By.cssSelector("div.confirmation-checkbox > label"));
-        Assertions.assertTrue(checkbox.isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector("#agegate-selector-options")).isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector("[type=\"submit\"][disabled]")).isDisplayed());
+        Assertions.assertTrue(welcomePage.checkLegalDrinkIsDisplayed());
+        Assertions.assertTrue(welcomePage.chooseCountryIsDisplayed());
+        Assertions.assertTrue(welcomePage.submitButtonIsDisabled());
     }
     //2
     @Test
     public void navigateAsEurope() {
         WelcomePage welcomePage = new WelcomePage();
         welcomePage.welcomePageAllAction();
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".fa.fa-bars")).isDisplayed());
+        MainVinePage mainVinePage = welcomePage.clickToSubmitButton();
+        Assertions.assertTrue(mainVinePage.menuBarOpenIsDisplayed());
 
     }
 
@@ -31,12 +31,13 @@ public class TestVine extends JunitRunner{
     public void allRequiredElementsDisplayed() {
         WelcomePage welcomePage = new WelcomePage();
         welcomePage.welcomePageAllAction();
+        MainVinePage mainVinePage = welcomePage.clickToSubmitButton();
 
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".content.animation-screen.-one > h2")).isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".fa.fa-bars > span")).isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".header-sub-copy")).isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".content.animation-screen.-one > .button.home-button[aria-label*='Find Your Wine'")).isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector("#primary-footer")).isDisplayed());
+        Assertions.assertTrue(mainVinePage.headerWelcomeIsDisplayed());
+        Assertions.assertTrue(mainVinePage.menuBarOpenIsDisplayed());
+        Assertions.assertTrue(mainVinePage.subHeaderIsDisplayed());
+        Assertions.assertTrue(mainVinePage.findWineIsDisplayed());
+        Assertions.assertTrue(mainVinePage.primaryFooterIsDisplayed());
     }
 
     //4
@@ -52,17 +53,17 @@ public class TestVine extends JunitRunner{
 
         mainVinePage.waitForMoment();
 
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".main-nav > div > nav > ul > li:nth-child(1) > a")).isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".main-nav > div > nav > ul > li:nth-child(2) > a")).isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".main-nav > div > nav > ul > li:nth-child(3) > a")).isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".main-nav > div > nav > ul > li:nth-child(4) > a")).isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".main-nav > div > nav > ul > li:nth-child(5) > a")).isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".main-nav > div > nav > ul > li:nth-child(6) > a")).isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector("#country-select > a")).isDisplayed());
+        Assertions.assertTrue(mainVinePage.wineLinkIsDisplayed());
+        Assertions.assertTrue(mainVinePage.wereBuyIsDisplayed());
+        Assertions.assertTrue(mainVinePage.chooseCocktailIsDisplayed());
+        Assertions.assertTrue(mainVinePage.chooseChinaIsDisplayed());
+        Assertions.assertTrue(mainVinePage.faqsIsDisplayed());
+        Assertions.assertTrue(mainVinePage.contactIsDisplayed());
+        Assertions.assertTrue(mainVinePage.chinaIsDisplayed());
 
         mainVinePage.clickToYellowTailLogo();
 
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".fa.fa-bars")).isDisplayed());
+        Assertions.assertTrue(mainVinePage.menuBarOpenIsDisplayed());
     }
     //5
     @Test
@@ -76,7 +77,7 @@ public class TestVine extends JunitRunner{
         mainVinePage.clickToMenuBar();
         mainVinePage.clickToYellowTailLogo();
 
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector(".fa.fa-bars")).isDisplayed());
+        Assertions.assertTrue(mainVinePage.menuBarOpenIsDisplayed());
 
 
     }
@@ -92,10 +93,10 @@ public class TestVine extends JunitRunner{
         mainVinePage.clickToMenuBar();
         mainVinePage.chooseCountry();
         mainVinePage.waitForChinaIsDisplayedIn();
-        mainVinePage.clickToChina();
-        mainVinePage.waitToLoadChinaPage();
+        ChinaPage chinaPage = mainVinePage.clickToChina();
+        chinaPage.waitToLoadChinaPage();
 
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector("#image-comp-id-1533175598405")).isDisplayed());
+        Assertions.assertTrue(chinaPage.imageOnChinaPageIsDisplayed());
     }
 
     //7
@@ -110,13 +111,13 @@ public class TestVine extends JunitRunner{
         mainVinePage.chooseCountry();
         mainVinePage.waitForChinaIsDisplayedIn();
 
-        mainVinePage.clickToChina();
-        mainVinePage.waitToWeiboLogoIsDisplayed();
+        ChinaPage chinaPage = mainVinePage.clickToChina();
+        chinaPage.waitToWeiboLogoIsDisplayed();
 
-        mainVinePage.clickToWeiboLogo();
+        chinaPage.clickToWeiboLogo();
 
-        String currentUrl = DriverProvider.getDriver().getCurrentUrl();
-        Assertions.assertTrue(currentUrl.contains("“https://yellowtailChina"));
+
+        Assertions.assertTrue(chinaPage.currentUrl.equals("“https://yellowtailChina"));
     }
 
     //8
@@ -134,8 +135,7 @@ public class TestVine extends JunitRunner{
 
         wereToBuyPage.clickToInputFieldLocationName();
 
-        List<WebElement> searchResult = DriverProvider.getDriver().findElements(By.cssSelector(".address"));
-        Assertions.assertTrue(searchResult.get(0).getText().contains("Sydney"));
+        Assertions.assertTrue(wereToBuyPage.searchResults.get(0).getText().contains("Sydney"));
     }
 
     //9
@@ -186,8 +186,8 @@ public class TestVine extends JunitRunner{
         wineCocktailsPage.chooseRedWineInCocktailList();
         wineCocktailsPage.chooseSparklingWine();
 
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector("[data-value=\"red\"].-checked")).isDisplayed());
-        Assertions.assertTrue(DriverProvider.getDriver().findElement(By.cssSelector("[data-value=\"bubbles\"].-checked")).isDisplayed());
+        Assertions.assertTrue(wineCocktailsPage.redWineCheckedIsDisplayed());
+        Assertions.assertTrue(wineCocktailsPage.sparkWineCheckedIsDisplayed());
 
         Assertions.assertEquals(18, wineCocktailsPage.countElementsRedAndSparklingWine());
 

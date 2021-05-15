@@ -28,12 +28,6 @@ public class MainVinePage extends AbstractPage{
     @FindBy(css = "div > ul > li:nth-child(4)")
     private WebElement chooseChina;
 
-    @FindBy(css = "#image-comp-id-1533175598405")
-    private WebElement imageOnChinaPage;
-
-    @FindBy(css = ".sgg-comp-social-slot.social-weibo")
-    private WebElement weiboLogo;
-
     @FindBy(css =".main-nav > div > nav > ul > li:nth-child(2) > a")
     private WebElement wereBuy;
 
@@ -41,18 +35,97 @@ public class MainVinePage extends AbstractPage{
     private WebElement chooseCocktail;
 
     @FindBy(css = ".main-nav > div > nav > ul > li:nth-child(1) > a")
-    private WebElement momentWait;
+    private WebElement wineLink;
+
+    @FindBy(css = ".content.animation-screen.-one > h2")
+    private WebElement headerWelcome;
+
+    @FindBy(xpath = "//p[contains(text(), \"We are passionate about creating great tasting, quality wines for everyone to enjoy\")]")
+    private WebElement subHeader;
+
+    @FindBy(css = ".content.animation-screen.-one > .button.home-button[aria-label*='Find Your Wine'")
+    private WebElement findWine;
+
+    @FindBy(css ="#primary-footer")
+    private WebElement primaryFooter;
+
+    @FindBy(css = ".main-nav > div > nav > ul > li:nth-child(5) > a")
+    private WebElement faqs;
+
+    @FindBy(css =".main-nav > div > nav > ul > li:nth-child(6) > a[href=\"https://www.yellowtailwine.com/contact/\"]")
+    private WebElement contact;
+
 
     public void clickToMenuBar(){
        // WebElement menuBarOpen = driver.findElement(By.cssSelector(".fa.fa-bars"));
         menuBarOpen.click();
     }
 
+    public boolean menuBarOpenIsDisplayed(){
+        menuBarOpen.isDisplayed();
+        return true;
+    }
+
+    public boolean headerWelcomeIsDisplayed(){
+        headerWelcome.isDisplayed();
+        return true;
+    }
+
+    public boolean subHeaderIsDisplayed(){
+        subHeader.isDisplayed();
+        return true;
+    }
+
+    public boolean findWineIsDisplayed(){
+        findWine.isDisplayed();
+        return true;
+    }
+
+    public boolean primaryFooterIsDisplayed(){
+        primaryFooter.isDisplayed();
+        return true;
+    }
+
+    public boolean wineLinkIsDisplayed(){
+        wineLink.isDisplayed();
+        return true;
+    }
+
+    public boolean wereBuyIsDisplayed(){
+        wereBuy.isDisplayed();
+        return true;
+    }
+
+    public boolean chooseCocktailIsDisplayed(){
+        chooseCocktail.isDisplayed();
+        return true;
+    }
+
+    public boolean chooseChinaIsDisplayed(){
+        chooseChina.isDisplayed();
+        return true;
+    }
+
+    public boolean faqsIsDisplayed(){
+        faqs.isDisplayed();
+        return true;
+    }
+
+    public boolean contactIsDisplayed(){
+        contact.isDisplayed();
+        return true;
+    }
+
+    public boolean chinaIsDisplayed(){
+        langChina.isDisplayed();
+        return true;
+    }
+
     public void waitForMenuBar(){
         Waiters.waitForElementToBeVisible(menuBarOpen);
     }
     public void waitForMoment(){
-        Waiters.waitForElementToBeVisible(momentWait);
+        Waiters.waitForElementToBeVisible(wineLink);
     }
 
     public void clickToYellowTailLogo(){
@@ -67,25 +140,14 @@ public class MainVinePage extends AbstractPage{
         Waiters.waitForElementToBeVisible(chooseChina);
     }
 
-    public void clickToChina(){
+    public ChinaPage clickToChina(){
         chooseChina.click();
-    }
-
-    public void waitToLoadChinaPage(){
-        Waiters.waitForElementToBeVisible(imageOnChinaPage);
-    }
-
-    public void waitToWeiboLogoIsDisplayed(){
-        Waiters.waitForElementToBeVisible(weiboLogo);
-    }
-
-    public void clickToWeiboLogo(){
-        weiboLogo.click();
+        return new ChinaPage();
     }
 
     public WereToBuyPage clickToWereToBuy(){
         wereBuy.click();
-        return new WereToBuyPage(DriverProvider.getDriver());
+        return new WereToBuyPage();
 
     }
 

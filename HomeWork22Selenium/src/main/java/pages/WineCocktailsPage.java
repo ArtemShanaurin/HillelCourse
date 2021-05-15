@@ -23,6 +23,22 @@ public class WineCocktailsPage extends AbstractPage{
     @FindBy(css = "[data-value=\"bubbles\"]")
     private WebElement chooseSparklingWine;
 
+    @FindBy(css = "[data-value=\"red\"].-checked")
+    WebElement redWineChecked;
+
+    @FindBy(css ="[data-value=\"bubbles\"].-checked")
+    WebElement sparkWineChecked;
+
+    public boolean sparkWineCheckedIsDisplayed(){
+        sparkWineChecked.isDisplayed();
+        return true;
+    }
+
+    public boolean redWineCheckedIsDisplayed(){
+        redWineChecked.isDisplayed();
+        return true;
+    }
+
     public void openCocktailList(){
         chooseToggle.click();
     }

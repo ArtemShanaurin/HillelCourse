@@ -1,13 +1,9 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Waiters;
-
-import java.time.Duration;
 
 public class WelcomePage extends AbstractPage{
 
@@ -18,7 +14,6 @@ public class WelcomePage extends AbstractPage{
    @FindBy(css = "div.confirmation-checkbox > label")
     private WebElement checkLegalDrink;
 
-    
 
     public void clickOnCheckLegalDrink() {
         checkLegalDrink.click();
@@ -26,6 +21,24 @@ public class WelcomePage extends AbstractPage{
 
     @FindBy(css ="#agegate-selector-options")
     private WebElement chooseCountry;
+
+    public boolean checkLegalDrinkIsDisplayed(){
+        checkLegalDrink.isDisplayed();
+        return true;
+    }
+
+    public boolean chooseCountryIsDisplayed(){
+        chooseCountry.isDisplayed();
+        return true;
+    }
+
+    @FindBy(css = "[type=\"submit\"][disabled]")
+    private WebElement submitButtonIsDisabled;
+
+    public boolean submitButtonIsDisabled(){
+        submitButtonIsDisabled.isDisplayed();
+        return true;
+    }
 
     public void waitForAgeGateSelector(){
         Waiters.waitForElementToBeVisible(chooseCountry);
