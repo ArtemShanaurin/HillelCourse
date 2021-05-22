@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestVineTest" class="method navigator-link" hash-for-method="globalNavlogic">globalNavlogic</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestVineTest" class="method navigator-link" hash-for-method="globalNavlogicChina">globalNavlogicChina</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestVineTest" class="method navigator-link" hash-for-method="whereToBuyValidZipCode">whereToBuyValidZipCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestVineTest" class="method navigator-link" hash-for-method="allRequiredElementsDisplayed">allRequiredElementsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestVineTest" class="method navigator-link" hash-for-method="cocktailsNavigateToCocktailRecipePage">cocktailsNavigateToCocktailRecipePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestVineTest" class="method navigator-link" hash-for-method="cocktailsSelectSeveralWines">cocktailsSelectSeveralWines</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestVineTest" class="method navigator-link" hash-for-method="menuButtonLogicHeaderClose">menuButtonLogicHeaderClose</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestVineTest" class="method navigator-link" hash-for-method="menuButtonLogicHeaderOpen">menuButtonLogicHeaderOpen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestVineTest" class="method navigator-link" hash-for-method="navigateAsEuropeTest">navigateAsEuropeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestVineTest" class="method navigator-link" hash-for-method="requiredElementsShowedTest">requiredElementsShowedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestVineTest" class="method navigator-link" hash-for-method="selectOneWine">selectOneWine</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestVineTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="globalNavlogic">
+                  </a> <!-- globalNavlogic -->
+                  <span class="method-name">globalNavlogic</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: #image-comp-id-1533175598405&apos; (tried for 2 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utils.Waiters.waitForElementToBeVisible(Waiters.java:12)
+	at pages.ChinaPage.waitToLoadChinaPage(ChinaPage.java:19)
+	at TestVineTest.globalNavlogic(TestVineTest.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#image-comp-id-1533175598405&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-beta-2&apos;, revision: &apos;4ec0cfc112&apos;
+System info: host: &apos;WIN-C2QDRP9BNJD&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0754735e3d2a84c888311b4f1f9c6e1a, findElement {using=css selector, value=#image-comp-id-1533175598405}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57972}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0754735e3d2a84c888311b4f1f9c6e1a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:195)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:128)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1259)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:388)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 35 more
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="globalNavlogicChina">
+                  </a> <!-- globalNavlogicChina -->
+                  <span class="method-name">globalNavlogicChina</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: .sgg-comp-social-slot.social-weibo&apos; (tried for 2 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utils.Waiters.waitForElementToBeVisible(Waiters.java:12)
+	at pages.ChinaPage.waitToWeiboLogoIsDisplayed(ChinaPage.java:23)
+	at TestVineTest.globalNavlogicChina(TestVineTest.java:119)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.sgg-comp-social-slot.social-weibo&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-beta-2&apos;, revision: &apos;4ec0cfc112&apos;
+System info: host: &apos;WIN-C2QDRP9BNJD&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a41b54e3f5273b01c4410941968f785, findElement {using=css selector, value=.sgg-comp-social-slot.social-weibo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a41b54e3f5273b01c4410941968f785
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:195)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:128)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1259)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:388)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 35 more
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="whereToBuyValidZipCode">
+                  </a> <!-- whereToBuyValidZipCode -->
+                  <span class="method-name">whereToBuyValidZipCode</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:459)
+	at TestVineTest.whereToBuyValidZipCode(TestVineTest.java:142)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestVineTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="allRequiredElementsDisplayed">
+                  </a> <!-- allRequiredElementsDisplayed -->
+                  <span class="method-name">allRequiredElementsDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cocktailsNavigateToCocktailRecipePage">
+                  </a> <!-- cocktailsNavigateToCocktailRecipePage -->
+                  <span class="method-name">cocktailsNavigateToCocktailRecipePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cocktailsSelectSeveralWines">
+                  </a> <!-- cocktailsSelectSeveralWines -->
+                  <span class="method-name">cocktailsSelectSeveralWines</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="menuButtonLogicHeaderClose">
+                  </a> <!-- menuButtonLogicHeaderClose -->
+                  <span class="method-name">menuButtonLogicHeaderClose</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="menuButtonLogicHeaderOpen">
+                  </a> <!-- menuButtonLogicHeaderOpen -->
+                  <span class="method-name">menuButtonLogicHeaderOpen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateAsEuropeTest">
+                  </a> <!-- navigateAsEuropeTest -->
+                  <span class="method-name">navigateAsEuropeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="requiredElementsShowedTest">
+                  </a> <!-- requiredElementsShowedTest -->
+                  <span class="method-name">requiredElementsShowedTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectOneWine">
+                  </a> <!-- selectOneWine -->
+                  <span class="method-name">selectOneWine</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestNgRunner&quot;/&gt;
+      &lt;class name=&quot;TestVineTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'globalNavlogicChina')
+data.setCell(0, 2, 'TestVineTest')
+data.setCell(0, 3, 7140);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'globalNavlogic')
+data.setCell(1, 2, 'TestVineTest')
+data.setCell(1, 3, 7091);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'whereToBuyValidZipCode')
+data.setCell(2, 2, 'TestVineTest')
+data.setCell(2, 3, 3689);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'cocktailsNavigateToCocktailRecipePage')
+data.setCell(3, 2, 'TestVineTest')
+data.setCell(3, 3, 2511);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'cocktailsSelectSeveralWines')
+data.setCell(4, 2, 'TestVineTest')
+data.setCell(4, 3, 1972);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'selectOneWine')
+data.setCell(5, 2, 'TestVineTest')
+data.setCell(5, 3, 1893);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'menuButtonLogicHeaderOpen')
+data.setCell(6, 2, 'TestVineTest')
+data.setCell(6, 3, 1272);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'menuButtonLogicHeaderClose')
+data.setCell(7, 2, 'TestVineTest')
+data.setCell(7, 3, 775);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'navigateAsEuropeTest')
+data.setCell(8, 2, 'TestVineTest')
+data.setCell(8, 3, 603);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'allRequiredElementsDisplayed')
+data.setCell(9, 2, 'TestVineTest')
+data.setCell(9, 3, 575);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'requiredElementsShowedTest')
+data.setCell(10, 2, 'TestVineTest')
+data.setCell(10, 3, 67);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestVineTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachFunction</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">allRequiredElementsDisplayed</span>
+                <span class="method-start">5722 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after([TestResult name=allRequiredElementsDisplayed status=SUCCESS method=TestVineTest.allRequiredElements...)</span>
+                <span class="method-start">6309 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachFunction</span>
+                <span class="method-start">6903 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cocktailsNavigateToCocktailRecipePage</span>
+                <span class="method-start">10099 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after([TestResult name=cocktailsNavigateToCocktailRecipePage status=SUCCESS method=TestVineTest.cocktailsN...)</span>
+                <span class="method-start">12676 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachFunction</span>
+                <span class="method-start">13272 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cocktailsSelectSeveralWines</span>
+                <span class="method-start">16486 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after([TestResult name=cocktailsSelectSeveralWines status=SUCCESS method=TestVineTest.cocktailsSelectSever...)</span>
+                <span class="method-start">18460 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachFunction</span>
+                <span class="method-start">19058 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">globalNavlogic</span>
+                <span class="method-start">22315 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after([TestResult name=globalNavlogic status=FAILURE method=TestVineTest.globalNavlogic()[pri:0, instance:...)</span>
+                <span class="method-start">29414 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachFunction</span>
+                <span class="method-start">30270 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">globalNavlogicChina</span>
+                <span class="method-start">33658 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after([TestResult name=globalNavlogicChina status=FAILURE method=TestVineTest.globalNavlogicChina()[pri:0,...)</span>
+                <span class="method-start">40800 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachFunction</span>
+                <span class="method-start">41645 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">menuButtonLogicHeaderClose</span>
+                <span class="method-start">44983 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after([TestResult name=menuButtonLogicHeaderClose status=SUCCESS method=TestVineTest.menuButtonLogicHeader...)</span>
+                <span class="method-start">45759 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachFunction</span>
+                <span class="method-start">46345 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">menuButtonLogicHeaderOpen</span>
+                <span class="method-start">49617 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after([TestResult name=menuButtonLogicHeaderOpen status=SUCCESS method=TestVineTest.menuButtonLogicHeaderO...)</span>
+                <span class="method-start">50890 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachFunction</span>
+                <span class="method-start">51478 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateAsEuropeTest</span>
+                <span class="method-start">54602 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after([TestResult name=navigateAsEuropeTest status=SUCCESS method=TestVineTest.navigateAsEuropeTest()[pri:...)</span>
+                <span class="method-start">55205 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachFunction</span>
+                <span class="method-start">55817 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">requiredElementsShowedTest</span>
+                <span class="method-start">58855 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after([TestResult name=requiredElementsShowedTest status=SUCCESS method=TestVineTest.requiredElementsShowe...)</span>
+                <span class="method-start">58923 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachFunction</span>
+                <span class="method-start">59522 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectOneWine</span>
+                <span class="method-start">62737 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after([TestResult name=selectOneWine status=SUCCESS method=TestVineTest.selectOneWine()[pri:0, instance:Te...)</span>
+                <span class="method-start">64632 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachFunction</span>
+                <span class="method-start">65226 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">whereToBuyValidZipCode</span>
+                <span class="method-start">68531 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after([TestResult name=whereToBuyValidZipCode status=FAILURE method=TestVineTest.whereToBuyValidZipCode()[...)</span>
+                <span class="method-start">72224 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

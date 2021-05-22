@@ -8,7 +8,6 @@ import utils.Constant;
 
 public class DriverFactory {
     public static WebDriver createInstance(BrowserType browserName){
-        //String browserName = "chrom";
         WebDriver driver;
         switch (browserName){
             case CHROME:

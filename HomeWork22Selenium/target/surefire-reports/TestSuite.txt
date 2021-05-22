@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 74.652 s <<< FAILURE! - in TestSuite
+globalNavlogic(TestVineTest)  Time elapsed: 7.098 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: #image-comp-id-1533175598405' (tried for 2 second(s) with 500 milliseconds interval)
+	at TestVineTest.globalNavlogic(TestVineTest.java:101)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#image-comp-id-1533175598405"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
+System info: host: 'WIN-C2QDRP9BNJD', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0754735e3d2a84c888311b4f1f9c6e1a, findElement {using=css selector, value=#image-comp-id-1533175598405}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57972}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0754735e3d2a84c888311b4f1f9c6e1a
+	at TestVineTest.globalNavlogic(TestVineTest.java:101)
+
+globalNavlogicChina(TestVineTest)  Time elapsed: 7.141 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: .sgg-comp-social-slot.social-weibo' (tried for 2 second(s) with 500 milliseconds interval)
+	at TestVineTest.globalNavlogicChina(TestVineTest.java:119)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".sgg-comp-social-slot.social-weibo"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
+System info: host: 'WIN-C2QDRP9BNJD', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a41b54e3f5273b01c4410941968f785, findElement {using=css selector, value=.sgg-comp-social-slot.social-weibo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a41b54e3f5273b01c4410941968f785
+	at TestVineTest.globalNavlogicChina(TestVineTest.java:119)
+
+whereToBuyValidZipCode(TestVineTest)  Time elapsed: 3.691 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at TestVineTest.whereToBuyValidZipCode(TestVineTest.java:142)
+

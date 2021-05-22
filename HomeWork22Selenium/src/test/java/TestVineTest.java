@@ -2,7 +2,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 import pages.*;
 
 public class TestVineTest extends TestNgRunner {
@@ -10,7 +10,7 @@ public class TestVineTest extends TestNgRunner {
 
     //1
     @Test
-    public void requiredElementsShowed() {
+    public void requiredElementsShowedTest() {
         WelcomePage welcomePage = new WelcomePage();
         Assertions.assertTrue(welcomePage.checkLegalDrinkIsDisplayed());
         Assertions.assertTrue(welcomePage.chooseCountryIsDisplayed());
@@ -21,7 +21,7 @@ public class TestVineTest extends TestNgRunner {
     @Description("Verify navigate to the main page as Europe")
     @Story("Test navigate to the main page as Europe")
     @Test
-    public void navigateAsEurope() {
+    public void navigateAsEuropeTest() {
         WelcomePage welcomePage = new WelcomePage();
         welcomePage.welcomePageAllAction();
         makeScreenshot();

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import pages.DriverProvider;
 import utils.Constant;
 
@@ -19,7 +20,7 @@ import java.nio.file.StandardCopyOption;
 import java.time.Duration;
 
 public class TestNgRunner {
-    @BeforeEach
+    @BeforeMethod
     public void beforeEachFunction(){
 
         DriverProvider.INSTANCE.getDriver().get(Constant.BASIC_URL);
@@ -33,7 +34,7 @@ public class TestNgRunner {
         if (!result.isSuccess()) {
             makeScreenshot();
         }
-        DriverProvider.INSTANCE.removeDriver(); }
+        DriverProvider.INSTANCE.removeDriver();}
 
     @Attachment(value = "Page screenshot", type = "image/png")
     byte[] makeScreenshot() {

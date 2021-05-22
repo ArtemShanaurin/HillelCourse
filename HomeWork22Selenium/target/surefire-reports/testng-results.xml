@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="8" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-22T13:50:55 EEST" name="Surefire suite" finished-at="2021-05-22T13:52:08 EEST" duration-ms="72987">
+    <groups>
+    </groups>
+    <test started-at="2021-05-22T13:50:55 EEST" name="Surefire test" finished-at="2021-05-22T13:52:08 EEST" duration-ms="72987">
+      <class name="TestVineTest">
+        <test-method is-config="true" signature="beforeEachFunction()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:50:55 EEST" name="beforeEachFunction" finished-at="2021-05-22T13:51:00 EEST" duration-ms="5604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachFunction -->
+        <test-method signature="allRequiredElementsDisplayed()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:00 EEST" name="allRequiredElementsDisplayed" finished-at="2021-05-22T13:51:01 EEST" duration-ms="575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allRequiredElementsDisplayed -->
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:01 EEST" name="after" finished-at="2021-05-22T13:51:02 EEST" duration-ms="591" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=allRequiredElementsDisplayed status=SUCCESS method=TestVineTest.allRequiredElementsDisplayed()[pri:0, instance:TestVineTest@2c306a57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="beforeEachFunction()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:02 EEST" name="beforeEachFunction" finished-at="2021-05-22T13:51:05 EEST" duration-ms="3195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachFunction -->
+        <test-method signature="cocktailsNavigateToCocktailRecipePage()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:05 EEST" name="cocktailsNavigateToCocktailRecipePage" finished-at="2021-05-22T13:51:07 EEST" duration-ms="2511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cocktailsNavigateToCocktailRecipePage -->
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:07 EEST" name="after" finished-at="2021-05-22T13:51:08 EEST" duration-ms="595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cocktailsNavigateToCocktailRecipePage status=SUCCESS method=TestVineTest.cocktailsNavigateToCocktailRecipePage()[pri:0, instance:TestVineTest@2c306a57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="beforeEachFunction()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:08 EEST" name="beforeEachFunction" finished-at="2021-05-22T13:51:11 EEST" duration-ms="3213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachFunction -->
+        <test-method signature="cocktailsSelectSeveralWines()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:11 EEST" name="cocktailsSelectSeveralWines" finished-at="2021-05-22T13:51:13 EEST" duration-ms="1972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cocktailsSelectSeveralWines -->
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:13 EEST" name="after" finished-at="2021-05-22T13:51:14 EEST" duration-ms="597" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cocktailsSelectSeveralWines status=SUCCESS method=TestVineTest.cocktailsSelectSeveralWines()[pri:0, instance:TestVineTest@2c306a57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="beforeEachFunction()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:14 EEST" name="beforeEachFunction" finished-at="2021-05-22T13:51:17 EEST" duration-ms="3256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachFunction -->
+        <test-method signature="globalNavlogic()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:17 EEST" name="globalNavlogic" finished-at="2021-05-22T13:51:24 EEST" duration-ms="7091" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: #image-comp-id-1533175598405' (tried for 2 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: #image-comp-id-1533175598405' (tried for 2 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at utils.Waiters.waitForElementToBeVisible(Waiters.java:12)
+at pages.ChinaPage.waitToLoadChinaPage(ChinaPage.java:19)
+at TestVineTest.globalNavlogic(TestVineTest.java:101)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#image-comp-id-1533175598405"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
+System info: host: 'WIN-C2QDRP9BNJD', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0754735e3d2a84c888311b4f1f9c6e1a, findElement {using=css selector, value=#image-comp-id-1533175598405}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57972}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0754735e3d2a84c888311b4f1f9c6e1a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:195)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:128)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1259)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:388)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalNavlogic -->
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:24 EEST" name="after" finished-at="2021-05-22T13:51:25 EEST" duration-ms="855" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=globalNavlogic status=FAILURE method=TestVineTest.globalNavlogic()[pri:0, instance:TestVineTest@2c306a57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="beforeEachFunction()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:25 EEST" name="beforeEachFunction" finished-at="2021-05-22T13:51:28 EEST" duration-ms="3387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachFunction -->
+        <test-method signature="globalNavlogicChina()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:28 EEST" name="globalNavlogicChina" finished-at="2021-05-22T13:51:35 EEST" duration-ms="7140" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: .sgg-comp-social-slot.social-weibo' (tried for 2 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: .sgg-comp-social-slot.social-weibo' (tried for 2 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at utils.Waiters.waitForElementToBeVisible(Waiters.java:12)
+at pages.ChinaPage.waitToWeiboLogoIsDisplayed(ChinaPage.java:23)
+at TestVineTest.globalNavlogicChina(TestVineTest.java:119)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".sgg-comp-social-slot.social-weibo"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
+System info: host: 'WIN-C2QDRP9BNJD', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a41b54e3f5273b01c4410941968f785, findElement {using=css selector, value=.sgg-comp-social-slot.social-weibo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a41b54e3f5273b01c4410941968f785
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:195)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:128)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1259)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:388)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalNavlogicChina -->
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:35 EEST" name="after" finished-at="2021-05-22T13:51:36 EEST" duration-ms="844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=globalNavlogicChina status=FAILURE method=TestVineTest.globalNavlogicChina()[pri:0, instance:TestVineTest@2c306a57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="beforeEachFunction()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:36 EEST" name="beforeEachFunction" finished-at="2021-05-22T13:51:40 EEST" duration-ms="3338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachFunction -->
+        <test-method signature="menuButtonLogicHeaderClose()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:40 EEST" name="menuButtonLogicHeaderClose" finished-at="2021-05-22T13:51:40 EEST" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menuButtonLogicHeaderClose -->
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:40 EEST" name="after" finished-at="2021-05-22T13:51:41 EEST" duration-ms="585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=menuButtonLogicHeaderClose status=SUCCESS method=TestVineTest.menuButtonLogicHeaderClose()[pri:0, instance:TestVineTest@2c306a57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="beforeEachFunction()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:41 EEST" name="beforeEachFunction" finished-at="2021-05-22T13:51:44 EEST" duration-ms="3271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachFunction -->
+        <test-method signature="menuButtonLogicHeaderOpen()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:44 EEST" name="menuButtonLogicHeaderOpen" finished-at="2021-05-22T13:51:46 EEST" duration-ms="1272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menuButtonLogicHeaderOpen -->
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:46 EEST" name="after" finished-at="2021-05-22T13:51:46 EEST" duration-ms="588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=menuButtonLogicHeaderOpen status=SUCCESS method=TestVineTest.menuButtonLogicHeaderOpen()[pri:0, instance:TestVineTest@2c306a57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="beforeEachFunction()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:46 EEST" name="beforeEachFunction" finished-at="2021-05-22T13:51:49 EEST" duration-ms="3124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachFunction -->
+        <test-method signature="navigateAsEuropeTest()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:49 EEST" name="navigateAsEuropeTest" finished-at="2021-05-22T13:51:50 EEST" duration-ms="603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateAsEuropeTest -->
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:50 EEST" name="after" finished-at="2021-05-22T13:51:50 EEST" duration-ms="588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateAsEuropeTest status=SUCCESS method=TestVineTest.navigateAsEuropeTest()[pri:0, instance:TestVineTest@2c306a57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="beforeEachFunction()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:51 EEST" name="beforeEachFunction" finished-at="2021-05-22T13:51:54 EEST" duration-ms="3037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachFunction -->
+        <test-method signature="requiredElementsShowedTest()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:54 EEST" name="requiredElementsShowedTest" finished-at="2021-05-22T13:51:54 EEST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- requiredElementsShowedTest -->
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:54 EEST" name="after" finished-at="2021-05-22T13:51:54 EEST" duration-ms="598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=requiredElementsShowedTest status=SUCCESS method=TestVineTest.requiredElementsShowedTest()[pri:0, instance:TestVineTest@2c306a57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="beforeEachFunction()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:54 EEST" name="beforeEachFunction" finished-at="2021-05-22T13:51:57 EEST" duration-ms="3214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachFunction -->
+        <test-method signature="selectOneWine()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:57 EEST" name="selectOneWine" finished-at="2021-05-22T13:51:59 EEST" duration-ms="1893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectOneWine -->
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:51:59 EEST" name="after" finished-at="2021-05-22T13:52:00 EEST" duration-ms="593" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectOneWine status=SUCCESS method=TestVineTest.selectOneWine()[pri:0, instance:TestVineTest@2c306a57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="beforeEachFunction()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:52:00 EEST" name="beforeEachFunction" finished-at="2021-05-22T13:52:03 EEST" duration-ms="3305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachFunction -->
+        <test-method signature="whereToBuyValidZipCode()[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:52:03 EEST" name="whereToBuyValidZipCode" finished-at="2021-05-22T13:52:07 EEST" duration-ms="3689" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 0 out of bounds for length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+at java.base/java.util.Objects.checkIndex(Objects.java:372)
+at java.base/java.util.ArrayList.get(ArrayList.java:459)
+at TestVineTest.whereToBuyValidZipCode(TestVineTest.java:142)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whereToBuyValidZipCode -->
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:TestVineTest@2c306a57]" started-at="2021-05-22T13:52:07 EEST" name="after" finished-at="2021-05-22T13:52:08 EEST" duration-ms="716" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=whereToBuyValidZipCode status=FAILURE method=TestVineTest.whereToBuyValidZipCode()[pri:0, instance:TestVineTest@2c306a57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- TestVineTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

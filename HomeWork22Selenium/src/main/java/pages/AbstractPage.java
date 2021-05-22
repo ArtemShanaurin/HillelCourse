@@ -12,7 +12,6 @@ public abstract class AbstractPage {
 
 
     public AbstractPage() {
-
         PageFactory.initElements(DriverProvider.INSTANCE.getDriver(), this);
     }
 

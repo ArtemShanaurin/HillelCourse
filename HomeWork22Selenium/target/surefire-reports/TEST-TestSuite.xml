@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="74.652" tests="11" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Program Files\maven\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="maven.conf" value="C:\Program Files\maven\apache-maven-3.6.3\bin\../conf"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.11\bin"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="C:\Program Files\maven\apache-maven-3.6.3\bin\.."/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\User"/>
+    <property name="user.language" value="ru"/>
+    <property name="sun.stderr.encoding" value="cp866"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.11"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="cp866"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.11+9-LTS-194"/>
+    <property name="user.name" value="User"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="user.dir" value="C:\Users\User\IdeaProjects\HomeWork22Selenium"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\User\IdeaProjects\HomeWork22Selenium"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\OpenJDK\jdk-8.0.272.10-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\maven\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\User\scoop\shims;C:\Program Files\OpenJDK\jdk-8.0.272.10-hotspot\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.3\bin;C:\Program Files\maven\apache-maven-3.6.3\bin;C:\Users\User\AppData\Local\gitkraken\bin;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.11+9-LTS-194"/>
+    <property name="classworlds.conf" value="C:\Program Files\maven\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="library.jansi.path" value="C:\Program Files\maven\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="allRequiredElementsDisplayed" classname="TestVineTest" time="0.558"/>
+  <testcase name="cocktailsNavigateToCocktailRecipePage" classname="TestVineTest" time="2.575"/>
+  <testcase name="cocktailsSelectSeveralWines" classname="TestVineTest" time="1.973"/>
+  <testcase name="globalNavlogic" classname="TestVineTest" time="7.098">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: #image-comp-id-1533175598405&apos; (tried for 2 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: #image-comp-id-1533175598405' (tried for 2 second(s) with 500 milliseconds interval)
+	at TestVineTest.globalNavlogic(TestVineTest.java:101)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#image-comp-id-1533175598405"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
+System info: host: 'WIN-C2QDRP9BNJD', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0754735e3d2a84c888311b4f1f9c6e1a, findElement {using=css selector, value=#image-comp-id-1533175598405}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57972}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0754735e3d2a84c888311b4f1f9c6e1a
+	at TestVineTest.globalNavlogic(TestVineTest.java:101)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 34400
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+мая 22, 2021 1:51:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+мая 22, 2021 1:51:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 90, so returning the closest version found: 89
+мая 22, 2021 1:51:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 90 of 89
+]]></system-err>
+  </testcase>
+  <testcase name="globalNavlogicChina" classname="TestVineTest" time="7.141">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: .sgg-comp-social-slot.social-weibo&apos; (tried for 2 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: .sgg-comp-social-slot.social-weibo' (tried for 2 second(s) with 500 milliseconds interval)
+	at TestVineTest.globalNavlogicChina(TestVineTest.java:119)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".sgg-comp-social-slot.social-weibo"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
+System info: host: 'WIN-C2QDRP9BNJD', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a41b54e3f5273b01c4410941968f785, findElement {using=css selector, value=.sgg-comp-social-slot.social-weibo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a41b54e3f5273b01c4410941968f785
+	at TestVineTest.globalNavlogicChina(TestVineTest.java:119)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 30017
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+мая 22, 2021 1:51:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+мая 22, 2021 1:51:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 90, so returning the closest version found: 89
+мая 22, 2021 1:51:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 90 of 89
+]]></system-err>
+  </testcase>
+  <testcase name="menuButtonLogicHeaderClose" classname="TestVineTest" time="0.774"/>
+  <testcase name="menuButtonLogicHeaderOpen" classname="TestVineTest" time="1.27"/>
+  <testcase name="navigateAsEuropeTest" classname="TestVineTest" time="0.6"/>
+  <testcase name="requiredElementsShowedTest" classname="TestVineTest" time="0.066"/>
+  <testcase name="selectOneWine" classname="TestVineTest" time="1.894"/>
+  <testcase name="whereToBuyValidZipCode" classname="TestVineTest" time="3.691">
+    <failure message="Index 0 out of bounds for length 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at TestVineTest.whereToBuyValidZipCode(TestVineTest.java:142)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 39187
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+мая 22, 2021 1:52:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+мая 22, 2021 1:52:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 90, so returning the closest version found: 89
+мая 22, 2021 1:52:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 90 of 89
+]]></system-err>
+  </testcase>
+</testsuite>
