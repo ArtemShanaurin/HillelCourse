@@ -1,4 +1,5 @@
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -16,6 +17,7 @@ public class TestVineTest extends TestNgRunner {
         Assertions.assertTrue(welcomePage.submitButtonIsDisabled());
     }
     //2
+    @Feature("Feature 1")
     @Description("Verify navigate to the main page as Europe")
     @Story("Test navigate to the main page as Europe")
     @Test
